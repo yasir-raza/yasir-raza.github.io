@@ -1,0 +1,146 @@
+*{
+	font-family: 'Open Sans', sans-serif;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+	overflow: hidden;
+	background: linear-gradient(to right, #f0f1f5, #c0c8df);
+	
+}
+label{
+	font-family: 'Open Sans', sans-serif;
+}
+html {
+	min-height: 100vh;
+	min-width: 100vw;
+}
+
+.row { display: flex;  }
+  
+.col { 
+	flex: 1; 
+	padding: 1em;
+}
+
+.container{
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap :7rem;
+	padding: 0 2rem;
+	margin: auto;
+	margin-top: 5% !important;
+	border-radius: 20px;
+	background: white;
+	box-shadow: 0 12px 16px rgba(116, 114, 114, 0.3), 0 10px 12px rgba(106, 106, 106, 0.22);
+}
+
+.btnImg{
+	height:30px; 
+	width: 100%;
+	background-color:#fb4c53;
+	border-radius: 10px;
+}
+
+.img{
+	height: 50vh;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-right: auto;
+	background-color: #fb4c53;
+}
+
+.login-content{
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+}
+
+.img img{
+	width: 30vw;
+	margin: 0 auto;
+}
+
+input{ 	background-color: #fafbff; font-family: 'Open Sans', sans-serif; }
+
+.login-content h2{
+	color: rgb(41, 41, 92);
+	font-weight: 750;
+	font-size: 2.9rem;
+	text-align: start;
+}
+
+.name-email-input{
+	height: 30px;
+    width: 100%;
+	border: 1px solid #d9d9d9;
+	border-radius: 8px;
+}
+
+.pwd-input{
+	height: 30px;
+    width: 100%;
+	border: 1px solid #d9d9d9;
+	border-radius: 8px;
+}
+
+button {
+	border: none;
+	color: white;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 14px;
+	padding-right: 14px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border-radius: 18px;
+	background-color: #fb4c53;
+	cursor: pointer;
+	box-shadow: 0 0 4px #999;
+  	outline: none;
+  }
+  .ripple {
+	background-position: center;
+	transition: background 0.8s;
+  }
+  .ripple:hover {
+	background: #ff7f83 radial-gradient(circle, transparent 1%, #fb4c53 1%) center/15000%;
+  }
+  .ripple:active {
+	background-color: #fb4c53;
+	background-size: 100%;
+	transition: background 0s;
+  }
+a{
+	text-decoration: none;
+	color: #fb4c53;
+}
+@media screen and (max-width: 1050px){
+	.container{ grid-gap: 5rem; }
+	.login-content{ margin: auto; }
+}
+
+@media screen and (max-width: 1000px){
+
+	.login-content h2{ font-size: 2.4rem; margin: 8px 0;
+	}
+	.login-content{ margin: auto; }
+}
+
+@media screen and (max-width: 900px){
+	.container{
+		grid-template-columns: 1fr;
+		padding: 1%;
+		height: 95vh;
+		width: 90vw;
+	}
+	.img{ 	display: none; }
+	.login-content{ margin: auto; }
+}
